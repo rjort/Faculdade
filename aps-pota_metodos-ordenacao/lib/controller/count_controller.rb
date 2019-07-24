@@ -15,9 +15,9 @@ class SortModules_Controller
 
   # Mostra o ARRAY ordenado pelo metodo
   def count_print_sort
-    @count.print_sort  
+    @count.print_sort
   end
-  
+
   # Metodo mostra a contagem de comparacoes da funcao
   # de ordenacao.
   def count_print_count

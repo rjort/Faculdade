@@ -33,7 +33,7 @@ module SortModule
       end
       @array_ordenado = array
     end
-  
+
     # Partition the array by selecting a random pivot and moving all elements less
     # than the pivot to a lesser index and all elements greater than the pivot to a
     # greater index.
@@ -46,7 +46,7 @@ module SortModule
       end
       return partition_right(array, left, right, compare)
     end
-  
+
     # Partition the array using the right most element as the pivot by moving all
     # elements less than the pivot to a lesser index and all elements greater than
     # the pivot to a greater index.

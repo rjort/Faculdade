@@ -2,7 +2,7 @@ class SortModules_Controller
   # Heap Sort:
   # Utilizacao de uma fila de prioridades implementada
   # com heap.
-  # 
+  #
   # Estrutura de dados composta por chaves, que suporta
   # duas operacoes basicas: insercao de um novo item e
   # remocao do item com a maior chave, a chave de cada

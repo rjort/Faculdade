@@ -52,7 +52,7 @@ module SortModule
           array[i] = aux[i]
         end
 
-      end # end if
+      end
 
       @array_ordenado = array
     end

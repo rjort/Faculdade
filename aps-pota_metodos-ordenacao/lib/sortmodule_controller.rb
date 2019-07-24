@@ -3,15 +3,15 @@ require_relative '../paths.rb'
 # Classe que serve como controladora de comunicao
 # para os metodos de ordenacao vindos do modulo
 # 'SortModule'
-# 
+#
 # > Qualquer alteracao na funcionalidade de um metodo
 # de ordenacao deve ser feito em seu devido bloco
-# 
+#
 # > Alteracoes extras deve ser feita na main da classe
 # 'sortmodule_controller.rb'
-# 
+#
 # Blocos dessa classe encontram-se na pasta 'controller'
-# 
+#
 # Cada bloco possui um 'initialize' com uma variavel de
 # instancia
 class SortModules_Controller
@@ -60,18 +60,18 @@ class SortModules_Controller
     statistics_sort(context - 1) if context == 5
     statistics_sort(context - 1) if context == 6
   end
-  
+
   private
 
   def statistics_sort(context)
-      @@buffer_statistics_count[context][0] = @bubble.count
-      @@buffer_statistics_count[context][1] = @bucket.count
-      @@buffer_statistics_count[context][2] = @count.count
-      @@buffer_statistics_count[context][3] = @heap.count
-      @@buffer_statistics_count[context][4] = @insertion.count
-      @@buffer_statistics_count[context][5] = @merge.count
-      @@buffer_statistics_count[context][6] = @quick.count
-      @@buffer_statistics_count[context][7] = @radix.count
-      @@buffer_statistics_count[context][8] = @selection.count
+    @@buffer_statistics_count[context][0] = @bubble.count
+    @@buffer_statistics_count[context][1] = @bucket.count
+    @@buffer_statistics_count[context][2] = @count.count
+    @@buffer_statistics_count[context][3] = @heap.count
+    @@buffer_statistics_count[context][4] = @insertion.count
+    @@buffer_statistics_count[context][5] = @merge.count
+    @@buffer_statistics_count[context][6] = @quick.count
+    @@buffer_statistics_count[context][7] = @radix.count
+    @@buffer_statistics_count[context][8] = @selection.count
   end
 end

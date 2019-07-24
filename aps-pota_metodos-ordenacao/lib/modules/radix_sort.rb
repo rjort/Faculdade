@@ -6,7 +6,7 @@ module SortModule
       @array_ordenado = []
       @count = 0
     end
-    
+
     def init(array)
       radix_sort(array)
     end
@@ -23,7 +23,7 @@ module SortModule
 
     def radix_sort(array)
       max_value = array.max
-      
+
       exp = 0
 
       until max_value.zero?
@@ -65,7 +65,6 @@ module SortModule
       end
 
       return result
-
     end
   end
 end

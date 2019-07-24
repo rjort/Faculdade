@@ -8,7 +8,7 @@ class SortModules_Controller
     puts "iniciado bubble sort"
     @bubble.init(array)
   end
-  
+
   # Metodo ostra o ARRAY ordenado pelo metodo
   def bubble_print_sort
     @bubble.print_sort

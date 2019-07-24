@@ -22,9 +22,8 @@ module SortModule
     private
 
     def merge_sort(array)
-      if array.length <= 1
-        return array
-      end
+      return array if array.length <= 1
+
       left = []
       right = []
       mid = array.length / 2
@@ -69,7 +68,7 @@ module SortModule
             j += 1
             x += 1
           end
-        
+
         elsif(i < left.size)
           @count += 1
           result[x] = left[i]
@@ -84,7 +83,7 @@ module SortModule
 
         end
       end
-      
+
       @array_ordenado = result
     end
   end

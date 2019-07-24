@@ -42,7 +42,7 @@ module SortModule
       (0..array.length - 1).each do |i|
         buckets[((array[i] - min) / bucket_size).floor].push(array[i])
       end
-      
+
       array.clear
       (0..buckets.length - 1).each do |i|
         @count += 1

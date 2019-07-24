@@ -5,8 +5,8 @@ class SortModules_Controller
   # 
   # Consiste em 'dividir' o array em pedacos menores e
   # resolve-los por meio de recursividade e depois
-  # 'conquistar' misturando ordenadamente 
-  # todos os pedacos resolvidos. 
+  # 'conquistar' misturando ordenadamente
+  # todos os pedacos resolvidos.
   def merge_sort_init(array)
     # FIXME: 09/06/2019 ::
     # chamada desse metodo retorna o array vazio
@@ -17,7 +17,7 @@ class SortModules_Controller
     puts "iniciado merge sort"
     @merge.init(array)
   end
-  
+
   # Mostra o ARRAY ordenado pelo metodo
   def merge_print_sort
     @merge.print_sort

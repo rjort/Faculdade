@@ -32,9 +32,7 @@ module SortModule
           @count += 1
         end
         array[index_hole] = item
-
       end
-      
       return @array_ordenado = array
     end
   end
