@@ -21,7 +21,6 @@ class SortModules_Controller
   # Contrutor com variaveis de instancia possuem
   # as funcoes de cada um dos tipos de ordenacao
   def initialize
-    puts 'Inicializado Interface para Modulos de Ordenacao'
     @bubble = SortModule::Bubblesort.new
     @bucket = SortModule::Bucketsort.new
     @count = SortModule::Countsort.new
