@@ -1,5 +1,9 @@
 require_relative './lib/sortmodule_controller.rb'
 
+def methods_sort_obj(obj)
+
+end
+
 obj_ordenacao = SortModules_Controller.new
 
 (1..6).each do |contexto|
