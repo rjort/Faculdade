@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Count Sort (Ordenacao por Contagem):
   # Propoe que cada elemento de entrada e um inteiro
   # na faixa de 0 a 'k'.
@@ -10,17 +10,8 @@ class SortModules_Controller
   # ocupa a posicao de saida 18
   def count_sort_init(array)
     puts "iniciado count sort"
-    @count.init(array)
-  end
-
-  # Mostra o ARRAY ordenado pelo metodo
-  def count_print_sort
-    @count.print_sort  
-  end
-  
-  # Metodo mostra a contagem de comparacoes da funcao
-  # de ordenacao.
-  def count_print_count
-    @count.print_count
+    @sortmethod = Countsort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::COUNT)
   end
 end

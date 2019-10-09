@@ -1,8 +1,7 @@
-require_relative './lib/sortmodule_controller.rb'
-
-obj_ordenacao = SortModules_Controller.new
+require_relative './controllers/application_controller.rb'
 
 def sort_methods_get(vetor, contexto, obj_ordenacao)
+  obj_ordenacao.context_save(contexto)
   obj_ordenacao.bubble_sort_init(vetor)
   obj_ordenacao.bucket_sort_init(vetor)
   obj_ordenacao.count_sort_init(vetor)
@@ -12,8 +11,9 @@ def sort_methods_get(vetor, contexto, obj_ordenacao)
   obj_ordenacao.quick_sort_init(vetor)
   obj_ordenacao.radix_sort_init(vetor)
   obj_ordenacao.selection_sort_init(vetor)
-  obj_ordenacao.validate_context(contexto)
 end
+
+obj_ordenacao = SortMethods.new
 
 (1..6).each do |contexto|
   if contexto == 1
