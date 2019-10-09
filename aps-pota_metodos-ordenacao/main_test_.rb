@@ -1,10 +1,18 @@
 # Todos os testes devem ser feitos nesse arquivo
+<<<<<<< HEAD
 
 require 'benchmark'
 require_relative './lib/sortmodule_controller.rb'
 
 # # chama todos os metodos de ordenacao para evitar repeticao
 def sort_methods_get(vetor, context, obj)
+=======
+require 'benchmark'
+require_relative './controllers/application_controller.rb'
+
+def organize_methods(obj,vetor)
+  obj.context_save(1)
+>>>>>>> develop
   obj.bubble_sort_init(vetor)
   obj.bucket_sort_init(vetor)
   obj.count_sort_init(vetor)
@@ -14,6 +22,7 @@ def sort_methods_get(vetor, context, obj)
   obj.quick_sort_init(vetor)
   obj.radix_sort_init(vetor)
   obj.selection_sort_init(vetor)
+<<<<<<< HEAD
   obj.validate_context(context)
 end
 
@@ -58,10 +67,16 @@ end
 obj_ordenacao = SortModules_Controller.new
 # vetor = Array.new(10) { |nums| nums = rand(1000) }
 # # basic_test_1(vetor, obj_ordenacao)
+=======
+end
+
+obj = SortMethods.new
+>>>>>>> develop
 
 Benchmark.bm do |bck|
   bck.report do
     (1..5).each do |i|
+<<<<<<< HEAD
       vetor = Array.new(10000) { |nums| nums = rand(100000) }
       sort_methods_get(vetor, context = 1, obj_ordenacao)
     end
@@ -70,3 +85,11 @@ end
 
 # puts ""
 # obj_ordenacao.print_statistics
+=======
+      puts "Loop #{i}"
+      vetor = Array.new(10000) { |nums| nums = rand(10000) }
+      organize_methods(obj,vetor)
+    end
+  end
+end
+>>>>>>> develop

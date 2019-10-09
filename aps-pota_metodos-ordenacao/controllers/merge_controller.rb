@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Merge Sort (Ordenacao por Mistura):
   # Algoritmo de ordenacao por comparacao do tipo
   # 'dividir-para-conquistar'
@@ -15,6 +15,7 @@ class SortModules_Controller
     # vetor ordenado nao tava retornando a variavel de instancia
     # do modulo de merge.
     puts "iniciado merge sort"
+<<<<<<< HEAD:aps-pota_metodos-ordenacao/lib/controller/merge_controller.rb
     @merge.init(array)
   end
 
@@ -27,5 +28,10 @@ class SortModules_Controller
   # de ordenacao.
   def merge_print_count
     @merge.print_count
+=======
+    @sortmethod = Mergesort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::MERGE)
+>>>>>>> develop:aps-pota_metodos-ordenacao/controllers/merge_controller.rb
   end
 end

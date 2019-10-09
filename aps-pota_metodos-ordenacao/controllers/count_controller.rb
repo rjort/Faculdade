@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Count Sort (Ordenacao por Contagem):
   # Propoe que cada elemento de entrada e um inteiro
   # na faixa de 0 a 'k'.
@@ -10,8 +10,11 @@ class SortModules_Controller
   # ocupa a posicao de saida 18
   def count_sort_init(array)
     puts "iniciado count sort"
-    @count.init(array)
+    @sortmethod = Countsort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::COUNT)
   end
+<<<<<<< HEAD:aps-pota_metodos-ordenacao/lib/controller/count_controller.rb
 
   # Mostra o ARRAY ordenado pelo metodo
   def count_print_sort
@@ -23,4 +26,6 @@ class SortModules_Controller
   def count_print_count
     @count.print_count
   end
+=======
+>>>>>>> develop:aps-pota_metodos-ordenacao/controllers/count_controller.rb
 end

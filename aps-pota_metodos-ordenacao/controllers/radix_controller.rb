@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Radix Sort:
   # Pressupoe que o array de entrada possuem um
   # limite no valor e tamanho (quantidade de digitos)
@@ -18,17 +18,8 @@ class SortModules_Controller
   # 'd' o numero de digitos
   def radix_sort_init(array)
     puts "iniciado radix sort"
-    @radix.init(array)
-  end
-
-  # Mostra o ARRAY ordenado pelo metodo
-  def radix_print_sort
-    @radix.print_sort
-  end
-
-  # Metodo mostra a contagem de comparacoes da funcao
-  # de ordenacao.
-  def radix_print_count
-    @radix.print_count
+    @sortmethod = Radixsort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::RADIX)
   end
 end

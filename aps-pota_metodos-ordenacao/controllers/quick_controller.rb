@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Quick Sort:
   # Algoritmo de ordenacao por comparacao do tipo
   # 'dividir-para-conquistar'
@@ -13,17 +13,8 @@ class SortModules_Controller
     # o output nao retorna nada
     # VERIFICAR SEU MODULE
     puts "iniciado quick sort"
-    @quick.init(array)
-  end
-
-  # Mostra o ARRAY ordenado pelo metodo
-  def quick_print_sort
-    @quick.print_sort
-  end
-
-  # Metodo mostra a contagem de comparacoes da funcao
-  # de ordenacao.
-  def quick_print_count
-    @quick.print_count
+    @sortmethod = Quicksort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::QUICK)
   end
 end

@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Heap Sort:
   # Utilizacao de uma fila de prioridades implementada
   # com heap.
@@ -10,8 +10,11 @@ class SortModules_Controller
   # item.
   def heap_sort_init(array)
     puts "iniciado heap sort"
-    @heap.init(array)
+    @sortmethod = Heapsort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::HEAP)
   end
+<<<<<<< HEAD:aps-pota_metodos-ordenacao/lib/controller/heap_controller.rb
 
   # Mostra o ARRAY ordenado pelo metodo
   def heap_print_sort
@@ -23,4 +26,6 @@ class SortModules_Controller
   def heap_print_count
     @heap.print_count
   end
+=======
+>>>>>>> develop:aps-pota_metodos-ordenacao/controllers/heap_controller.rb
 end

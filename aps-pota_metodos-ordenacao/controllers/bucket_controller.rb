@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Bucket Sort (Ordenacao em Tempo Linear):
   # Assume que a entrada consiste em elementos
   # distribuidos de forma uniforme sobre o intervalo
@@ -8,8 +8,11 @@ class SortModules_Controller
   # entao distribuir os 'n' numeros de baldes
   def bucket_sort_init(array)
     puts "iniciado bucket sort"
-    @bucket.init(array)
+    @sortmethod = Bucketsort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::BUCKET)
   end
+<<<<<<< HEAD:aps-pota_metodos-ordenacao/lib/controller/bucket_controller.rb
 
   # Mostra o ARRAY ordenado pelo metodo
   def bucket_print_sort
@@ -21,4 +24,6 @@ class SortModules_Controller
   def bucket_print_count
     @bucket.print_count
   end
+=======
+>>>>>>> develop:aps-pota_metodos-ordenacao/controllers/bucket_controller.rb
 end
