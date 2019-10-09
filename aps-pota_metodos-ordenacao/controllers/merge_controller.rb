@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Merge Sort (Ordenacao por Mistura):
   # Algoritmo de ordenacao por comparacao do tipo
   # 'dividir-para-conquistar'
@@ -15,17 +15,8 @@ class SortModules_Controller
     # vetor ordenado nao tava retornando a variavel de instancia
     # do modulo de merge.
     puts "iniciado merge sort"
-    @merge.init(array)
-  end
-  
-  # Mostra o ARRAY ordenado pelo metodo
-  def merge_print_sort
-    @merge.print_sort
-  end
-
-  # Metodo mostra a contagem de comparacoes da funcao
-  # de ordenacao.
-  def merge_print_count
-    @merge.print_count
+    @sortmethod = Mergesort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::MERGE)
   end
 end

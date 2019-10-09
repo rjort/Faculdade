@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Insertion Sort:
   # Dada uma estrutura (array, lista) constroi uma
   # matriz final com um elemento de cada vez, uma
@@ -16,17 +16,8 @@ class SortModules_Controller
   # > 3<>5 2 4 7 1 0 6
   def insertion_sort_init(array)
     puts "iniciado insertion sort"
-    @insertion.init(array)
-  end
-
-  # Mostra o ARRAY ordenado pelo metodo
-  def insertion_print_sort
-    @insertion.print_sort
-  end
-
-  # Metodo mostra a contagem de comparacoes da funcao
-  # de ordenacao.
-  def insertion_print_count
-    @insertion.print_count
+    @sortmethod = Insertionsort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::INSERTION)
   end
 end

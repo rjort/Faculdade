@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Heap Sort:
   # Utilizacao de uma fila de prioridades implementada
   # com heap.
@@ -10,17 +10,8 @@ class SortModules_Controller
   # item.
   def heap_sort_init(array)
     puts "iniciado heap sort"
-    @heap.init(array)
-  end
-
-  # Mostra o ARRAY ordenado pelo metodo
-  def heap_print_sort
-    @heap.print_sort
-  end
-
-  # Metodo mostra a contagem de comparacoes da funcao
-  # de ordenacao.
-  def heap_print_count
-    @heap.print_count
+    @sortmethod = Heapsort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::HEAP)
   end
 end

@@ -1,4 +1,4 @@
-class SortModules_Controller
+class SortMethods
   # Bucket Sort (Ordenacao em Tempo Linear):
   # Assume que a entrada consiste em elementos
   # distribuidos de forma uniforme sobre o intervalo
@@ -8,17 +8,8 @@ class SortModules_Controller
   # entao distribuir os 'n' numeros de baldes
   def bucket_sort_init(array)
     puts "iniciado bucket sort"
-    @bucket.init(array)
-  end
-
-  # Mostra o ARRAY ordenado pelo metodo
-  def bucket_print_sort
-    @bucket.print_sort
-  end
-
-  # Metodo mostra a contagem de comparacoes da funcao
-  # de ordenacao.
-  def bucket_print_count
-    @bucket.print_count
+    @sortmethod = Bucketsort.new
+    @sortmethod.init(array)
+    statistics_sort(Flag_Sort::BUCKET)
   end
 end
