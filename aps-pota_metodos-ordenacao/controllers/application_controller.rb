@@ -44,12 +44,12 @@ class SortMethods
 
   def print_count
     count = count_comparations()
-    puts "#{count}"
+    puts "Comparacoes: #{count}"
   end
 
   def print_array_sorted
     a_sorted = array_sort()
-    puts "#{a_sorted}"
+    puts "Vetor Ordenado: #{a_sorted}"
   end
   
   # salva o contexto no "buffer"
@@ -72,6 +72,6 @@ class SortMethods
   end
   
   def statistics_sort(sort_method_flag)
-    @@buffer_statistics_count[@@buffer_context][sort_method_flag] = count_comparations()
+    @@buffer_statistics_count[@@buffer_context - 1][sort_method_flag] = count_comparations()
   end
 end

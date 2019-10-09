@@ -1,11 +1,11 @@
 module Flag_Sort
-  BUBBLE = 1
-  BUCKET = 2
-  COUNT = 3
-  HEAP = 4
-  INSERTION = 5
-  MERGE = 6
-  QUICK = 7
-  RADIX = 8
-  SELECTION = 9
+  BUBBLE = 0
+  BUCKET = 1
+  COUNT = 2
+  HEAP = 3
+  INSERTION = 4
+  MERGE = 5
+  QUICK = 6
+  RADIX = 7
+  SELECTION = 8
 end

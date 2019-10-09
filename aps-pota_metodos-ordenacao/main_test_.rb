@@ -7,29 +7,46 @@ obj.context_save(1)
 obj.bubble_sort_init([3,4,10,1,100,32,2])
 obj.print_array_sorted
 obj.print_count
+puts ""
+
 obj.bucket_sort_init([3,4,10,1,100,32,2])
 obj.print_array_sorted
 obj.print_count
+puts ""
+
 obj.count_sort_init([3,4,10,1,100,32,2])
 obj.print_array_sorted
 obj.print_count
+puts ""
+
 obj.heap_sort_init([3,4,10,1,100,32,2])
 obj.print_array_sorted
 obj.print_count
+puts ""
+
 obj.insertion_sort_init([3,4,10,1,100,32,2])
 obj.print_array_sorted
 obj.print_count
+puts ""
+
 obj.merge_sort_init([3,4,10,1,100,32,2])
 obj.print_array_sorted
 obj.print_count
+puts ""
+
 obj.quick_sort_init([3,4,10,1,100,32,2])
 obj.print_array_sorted
 obj.print_count
+puts ""
+
 obj.radix_sort_init([3,4,10,1,100,32,2])
 obj.print_array_sorted
 obj.print_count
+puts ""
+
 obj.selection_sort_init([3,4,10,1,100,32,2])
 obj.print_array_sorted
 obj.print_count
+puts ""
 
 obj.print_statistics
