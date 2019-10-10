@@ -28,4 +28,4 @@ Os metodos devem ordenar 50 vetores de tamanhos 5, 10, 100, 1000 e 10000 com val
 
 Atraves da criação de um objeto que implementa uma classe que se associa com outras classes que possuem os metodos de ordenaçãa. Para a geração do vetores, foi incluido um loop onde são gerados a cada loop um novo array com um determinado tamanho a cada 'contexto' do loop e inicializado com numeros aleatorios onde são passados o vetor gerado, o objeto contando a 'interface' para inicialização de um determinado metodo de ordenação e o contexto.
 
-#### Unifacs 2019.1
+#### Unifacs 2018.2
