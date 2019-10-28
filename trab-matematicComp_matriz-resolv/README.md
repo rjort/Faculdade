@@ -11,7 +11,11 @@ Objetivo: criar um programa que leia e calcule uma matriz e a transforme em uma 
 
 ## Como usar?
 
-No terminal ou cmd usar: ./matriz
+No terminal ou cmd usar: $ ./matriz
+
+### Para compilar
+
+Fazer as devidas alteracoes nos arquivos e depois usar: $ make ou $ make all
 
 ## Para teste
 
