@@ -1,5 +1,9 @@
 require_relative './controllers/application_controller.rb'
 
+
+
+# po man, saudades de otacilio, me peguei esses dias chorando no canto do meu quarto no escuro, estava aos prantos
+
 def sort_methods_get(vetor, contexto, obj_ordenacao)
   obj_ordenacao.context_save(contexto)
   obj_ordenacao.bubble_sort_init(vetor)
